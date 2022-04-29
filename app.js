@@ -33,12 +33,12 @@ app.post("/", function(req, res){
 
   var jsondata = JSON.stringify(data);
 
-  const url = "https://us14.api.mailchimp.com/3.0/lists/175d83f6a9";
+  const url = "#####";
 
   const options = {
     method: "POST",
     body: data,
-    auth: "danny:58dd29921c819e98806a1021f56cfed2-us14"
+    auth: "#####"
   };
 
 
@@ -72,9 +72,3 @@ app.post("/failure", function(req,res){
 app.listen(process.env.PORT || 3000, function(){
   console.log("You are now live");
 });
-
-// API KEY
-// 58dd29921c819e98806a1021f56cfed2-us14
-
-// UNIQUE ID
-// 175d83f6a9.
